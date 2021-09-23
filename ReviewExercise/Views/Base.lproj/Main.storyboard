@@ -20,11 +20,12 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WMx-zS-aEn">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" red="0.82796555760000001" green="0.85052782299999996" blue="0.8823577762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MvC-Bt-rF8">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="MvC-Bt-rF8">
                                     <size key="itemSize" width="128" height="128"/>
+                                    <size key="estimatedItemSize" width="190" height="236"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -46,11 +47,28 @@
                     </navigationItem>
                     <connections>
                         <outlet property="fruitCollectionView" destination="WMx-zS-aEn" id="yNB-QM-Vpj"/>
+                        <segue destination="1ul-Wc-UBv" kind="show" identifier="goToDetail" id="9EE-SZ-Y29"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="800.00000000000011" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZGx-FQ-qwa">
+            <objects>
+                <viewController id="1ul-Wc-UBv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pOO-4M-Hc0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gs9-Ke-Oe0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="miK-17-BR4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2k-P9-boF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TGS-V8-zmh">

@@ -119,6 +119,9 @@
                                 <state key="normal">
                                     <imageReference key="image" image="heart" catalog="system" symbolScale="medium"/>
                                 </state>
+                                <connections>
+                                    <action selector="favoriteButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="yuG-Yh-Czl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -9,13 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var fruitCollectionView: UICollectionView!
+    let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
         fruitCollectionView.delegate = self
         fruitCollectionView.dataSource = self
         fruitCollectionView.register(UINib(nibName: "itemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "itemCell")
         // Do any additional setup after loading the view.
-        
     }
 }
 
@@ -34,9 +34,9 @@ extension ViewController: UICollectionViewDataSource {
         cell.itemImageView.image = UIImage(imageLiteralResourceName: arr[indexPath.row].image)
         cell.priceLabel.attributedText = arr[indexPath.row].priceString
         cell.discountPriceLabel.text = arr[indexPath.row].discountPriceString
+        cell.isLoved = defaults.bool(forKey: arr[indexPath.row].name)
         return cell
     }
-    
 }
 
 //MARK: - UICollectionViewDelegate

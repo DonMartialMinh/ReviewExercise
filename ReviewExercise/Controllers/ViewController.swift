@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     @IBOutlet weak var fruitCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +26,14 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
-    }
+        return arr.count    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! itemCollectionViewCell
-        
+        cell.nameLabel.text = arr[indexPath.row].name
+        cell.itemImageView.image = UIImage(imageLiteralResourceName: arr[indexPath.row].image)
+        cell.priceLabel.text = arr[indexPath.row].priceString
+        cell.discountPriceLabel.text = arr[indexPath.row].discountPriceString
         return cell
     }
     

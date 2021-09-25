@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8385415026FF0ADA000FD6EF /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385414F26FF0AD9000FD6EF /* item.swift */; };
+		8385415226FF10B4000FD6EF /* mockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385415126FF10B4000FD6EF /* mockData.swift */; };
 		83C4ED6926FC132B004E714F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4ED6826FC132B004E714F /* AppDelegate.swift */; };
 		83C4ED6B26FC132B004E714F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4ED6A26FC132B004E714F /* SceneDelegate.swift */; };
 		83C4ED6D26FC132B004E714F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4ED6C26FC132B004E714F /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8385414F26FF0AD9000FD6EF /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		8385415126FF10B4000FD6EF /* mockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockData.swift; sourceTree = "<group>"; };
 		83C4ED6526FC132B004E714F /* ReviewExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReviewExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C4ED6826FC132B004E714F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83C4ED6A26FC132B004E714F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 		83C4ED7C26FC1BE6004E714F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8385414F26FF0AD9000FD6EF /* item.swift */,
+				8385415126FF10B4000FD6EF /* mockData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +176,8 @@
 			files = (
 				83C4ED6D26FC132B004E714F /* ViewController.swift in Sources */,
 				83C4ED8126FC2092004E714F /* itemCollectionViewCell.swift in Sources */,
+				8385415026FF0ADA000FD6EF /* item.swift in Sources */,
+				8385415226FF10B4000FD6EF /* mockData.swift in Sources */,
 				83C4ED6926FC132B004E714F /* AppDelegate.swift in Sources */,
 				83C4ED6B26FC132B004E714F /* SceneDelegate.swift in Sources */,
 			);

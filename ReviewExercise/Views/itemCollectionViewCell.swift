@@ -15,11 +15,13 @@ class itemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var cartButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         roundComponent()
         // Initialization code
     }
+
 
     func roundComponent() {
         self.layer.cornerRadius = self.bounds.size.width * 0.1

@@ -15,8 +15,10 @@ public struct Item {
     var rating: Double
     var type: String
     
-    var priceString: String {
-        return "$\(price)"
+    var priceString: NSMutableAttributedString {
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "$\(price)")
+            attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attributeString.length))
+        return attributeString
     }
     
     var discountPriceString: String {

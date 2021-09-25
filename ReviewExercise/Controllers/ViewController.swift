@@ -32,7 +32,7 @@ extension ViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! itemCollectionViewCell
         cell.nameLabel.text = arr[indexPath.row].name
         cell.itemImageView.image = UIImage(imageLiteralResourceName: arr[indexPath.row].image)
-        cell.priceLabel.text = arr[indexPath.row].priceString
+        cell.priceLabel.attributedText = arr[indexPath.row].priceString
         cell.discountPriceLabel.text = arr[indexPath.row].discountPriceString
         return cell
     }

@@ -55,21 +55,81 @@
             </objects>
             <point key="canvasLocation" x="800.00000000000011" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Item Detail View Controller-->
         <scene sceneID="ZGx-FQ-qwa">
             <objects>
-                <viewController id="1ul-Wc-UBv" sceneMemberID="viewController">
+                <viewController id="1ul-Wc-UBv" customClass="itemDetailViewController" customModule="ReviewExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pOO-4M-Hc0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sIH-PX-ecw">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8MX-wT-PKS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="app-x3-kif">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="320" id="UFc-8K-VKt"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7K-z1-HeL">
+                                                <rect key="frame" x="0.0" y="320" width="414" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cashuchasuchuaschuahcuashcuashcuashcuahashcuahcuahscuhascuhasuc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4O-5m-iwI">
+                                                        <rect key="frame" x="25" y="54" width="364" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cherry cherry lady" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyZ-GL-IDp">
+                                                        <rect key="frame" x="25" y="20" width="364" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="UyZ-GL-IDp" secondAttribute="trailing" constant="25" id="7gZ-rR-IvN"/>
+                                                    <constraint firstItem="UyZ-GL-IDp" firstAttribute="top" secondItem="O7K-z1-HeL" secondAttribute="top" constant="20" id="Dnk-XA-j9F"/>
+                                                    <constraint firstItem="N4O-5m-iwI" firstAttribute="leading" secondItem="O7K-z1-HeL" secondAttribute="leading" constant="25" id="M9l-HI-VZz"/>
+                                                    <constraint firstItem="N4O-5m-iwI" firstAttribute="top" secondItem="UyZ-GL-IDp" secondAttribute="bottom" constant="12.5" id="QJL-mY-6cu"/>
+                                                    <constraint firstItem="UyZ-GL-IDp" firstAttribute="leading" secondItem="O7K-z1-HeL" secondAttribute="leading" constant="25" id="Tfg-aV-IOe"/>
+                                                    <constraint firstAttribute="height" constant="100" id="VGG-sS-6n3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="N4O-5m-iwI" secondAttribute="trailing" constant="25" id="jX0-cT-Glw"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8MX-wT-PKS" firstAttribute="leading" secondItem="bPn-DS-Qll" secondAttribute="leading" id="7dY-GJ-5PP"/>
+                                    <constraint firstItem="8MX-wT-PKS" firstAttribute="width" secondItem="Lgk-xc-PSb" secondAttribute="width" id="a3X-cY-t54"/>
+                                    <constraint firstItem="8MX-wT-PKS" firstAttribute="trailing" secondItem="bPn-DS-Qll" secondAttribute="trailing" id="hZe-ac-F7x"/>
+                                    <constraint firstItem="8MX-wT-PKS" firstAttribute="bottom" secondItem="bPn-DS-Qll" secondAttribute="bottom" id="n4v-MJ-fhh"/>
+                                    <constraint firstItem="8MX-wT-PKS" firstAttribute="top" secondItem="bPn-DS-Qll" secondAttribute="top" id="sFj-go-C7B"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="bPn-DS-Qll"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Lgk-xc-PSb"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gs9-Ke-Oe0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="miK-17-BR4"/>
+                    <navigationItem key="navigationItem" id="miK-17-BR4">
+                        <barButtonItem key="rightBarButtonItem" title="Design by Cronum" style="done" id="dnY-4d-M5c"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="authorButton" destination="dnY-4d-M5c" id="9nz-2F-Jo8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2k-P9-boF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="94"/>
+            <point key="canvasLocation" x="1642.0289855072465" y="93.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TGS-V8-zmh">
@@ -90,6 +150,7 @@
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">

@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         fruitCollectionView.delegate = self
         fruitCollectionView.dataSource = self
         fruitCollectionView.register(UINib(nibName: "itemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "itemCell")
@@ -41,6 +42,16 @@ extension ViewController: UICollectionViewDataSource {
 
 //MARK: - UICollectionViewDelegate
 extension ViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToDetail", sender: self)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = fruitCollectionView.indexPathsForSelectedItems {
+            let destinationVC = segue.destination as! itemDetailViewController
+            fruitCollectionView.deselectItem(at: indexPath[0], animated: false)
+        }
+    }
 }
+
 

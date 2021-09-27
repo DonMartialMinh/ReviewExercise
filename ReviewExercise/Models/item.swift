@@ -21,7 +21,16 @@ public struct Item {
         return attributeString
     }
     
-    var discountPriceString: String {
-        return String(format: "$%.1f", price - price * discount)
+    var discountPrice: Double {
+        return price - price * discount
     }
+    
+    var discountPriceString: String {
+        return String(format: "$%.1f", discountPrice)
+    }
+    
+    var ratingString: String {
+        return "\(rating)"
+    }
+    
 }

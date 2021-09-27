@@ -49,6 +49,7 @@ extension ViewController: UICollectionViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = fruitCollectionView.indexPathsForSelectedItems {
             let destinationVC = segue.destination as! itemDetailViewController
+            destinationVC.item = arr[indexPath[0].row]
             fruitCollectionView.deselectItem(at: indexPath[0], animated: false)
         }
     }

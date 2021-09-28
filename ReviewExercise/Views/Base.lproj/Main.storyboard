@@ -58,7 +58,7 @@
         <!--Item Detail View Controller-->
         <scene sceneID="ZGx-FQ-qwa">
             <objects>
-                <viewController id="1ul-Wc-UBv" customClass="itemDetailViewController" customModule="ReviewExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1ul-Wc-UBv" customClass="ItemDetailViewController" customModule="ReviewExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pOO-4M-Hc0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

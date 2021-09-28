@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         fruitCollectionView.delegate = self
         fruitCollectionView.dataSource = self
-        fruitCollectionView.register(UINib(nibName: "itemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "itemCell")
+        fruitCollectionView.register(UINib(nibName: Constant.cellNibName, bundle: nil), forCellWithReuseIdentifier: Constant.cellIdentifier)
         // Do any additional setup after loading the view.
     }
 }
@@ -30,7 +30,7 @@ extension ViewController: UICollectionViewDataSource {
         return arr.count    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! itemCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constant.cellIdentifier, for: indexPath) as! ItemCollectionViewCell
         cell.nameLabel.text = arr[indexPath.row].name
         cell.itemImageView.image = UIImage(imageLiteralResourceName: arr[indexPath.row].image)
         cell.priceLabel.attributedText = arr[indexPath.row].priceString
@@ -43,12 +43,12 @@ extension ViewController: UICollectionViewDataSource {
 //MARK: - UICollectionViewDelegate
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToDetail", sender: self)
+        performSegue(withIdentifier: Constant.detailSegue, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = fruitCollectionView.indexPathsForSelectedItems {
-            let destinationVC = segue.destination as! itemDetailViewController
+            let destinationVC = segue.destination as! ItemDetailViewController
             destinationVC.item = arr[indexPath[0].row]
             fruitCollectionView.deselectItem(at: indexPath[0], animated: false)
         }

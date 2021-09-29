@@ -17,13 +17,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         fruitCollectionView.delegate = self
-        itemSearchBar.delegate = self
         fruitCollectionView.dataSource = self
         fruitCollectionView.register(UINib(nibName: Constant.cellNibName, bundle: nil), forCellWithReuseIdentifier: Constant.cellIdentifier)
+        itemSearchBar.delegate = self
+        resizableCell()
     }
     @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
         searchBarButtonItem.customView = itemSearchBar
     }
+    
+    func resizableCell() {
+        let itemSize = UIScreen.main.bounds.width/2 - 23
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        layout.itemSize = CGSize(width: itemSize, height: 236.0)
+        layout.minimumInteritemSpacing = 15
+        layout.minimumLineSpacing = 15
+        fruitCollectionView.collectionViewLayout = layout
+    }
+    
 }
 
 //MARK: - UICollectionViewDataSource
@@ -60,7 +73,6 @@ extension ViewController: UICollectionViewDelegate {
         }
     }
 }
-
 
 //MARK: - UISearchBarDelegate
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830D9DAE2709603500F6352A /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D9DAD2709603500F6352A /* CustomView.swift */; };
 		8385415026FF0ADA000FD6EF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385414F26FF0AD9000FD6EF /* Item.swift */; };
 		8385415226FF10B4000FD6EF /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385415126FF10B4000FD6EF /* MockData.swift */; };
 		8385415426FF7DBB000FD6EF /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385415326FF7DBB000FD6EF /* ItemDetailViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830D9DAD2709603500F6352A /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		8385414F26FF0AD9000FD6EF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8385415126FF10B4000FD6EF /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		8385415326FF7DBB000FD6EF /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				83C4ED6E26FC132B004E714F /* Main.storyboard */,
 				83C4ED7F26FC2092004E714F /* ItemCollectionViewCell.swift */,
 				83C4ED8026FC2092004E714F /* ItemCollectionViewCell.xib */,
+				830D9DAD2709603500F6352A /* CustomView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				83C4ED8126FC2092004E714F /* ItemCollectionViewCell.swift in Sources */,
 				8385415026FF0ADA000FD6EF /* Item.swift in Sources */,
 				8385415426FF7DBB000FD6EF /* ItemDetailViewController.swift in Sources */,
+				830D9DAE2709603500F6352A /* CustomView.swift in Sources */,
 				8385415226FF10B4000FD6EF /* MockData.swift in Sources */,
 				83C4ED6926FC132B004E714F /* AppDelegate.swift in Sources */,
 				83C4ED6B26FC132B004E714F /* SceneDelegate.swift in Sources */,

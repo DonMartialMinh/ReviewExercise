@@ -25,7 +25,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="FWf-6c-dXh">
                                 <rect key="frame" x="0.0" y="0.0" width="182" height="236"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_au-cherry" translatesAutoresizingMaskIntoConstraints="NO" id="adp-XP-HBQ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_au-cherry" translatesAutoresizingMaskIntoConstraints="NO" id="adp-XP-HBQ">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="Ibm-05-Mej"/>
@@ -50,7 +50,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CkI-3p-1wd">
+                                                    <stackView opaque="NO" contentMode="center" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CkI-3p-1wd">
                                                         <rect key="frame" x="0.0" y="36.666666666666657" width="162" height="30"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="nw3-Kj-GGS">
@@ -174,7 +174,7 @@
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="img_au-cherry" width="241" height="209"/>
+        <image name="img_au-cherry" width="60" height="52"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

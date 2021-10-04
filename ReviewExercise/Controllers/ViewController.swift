@@ -75,7 +75,6 @@ extension ViewController: UICollectionViewDelegate {
 }
 
 //MARK: - UISearchBarDelegate
-
 extension ViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if searchBar.text?.count == 0 {

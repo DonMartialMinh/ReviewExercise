@@ -6,10 +6,12 @@
       "scale" : "1x"
     },
     {
+      "filename" : "img_af-pear@2x.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "img_af-pear@3x.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
